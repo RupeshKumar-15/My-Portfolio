@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupesh's Portfolio</title>
+    <link rel = "stylesheet" href = "/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/v2.png" type="image/x-icon">
+
+</head>
+<body>
+    <div class="nav">
+        <nav>
+            <div class="navbar">
+                <ul>
+                    <a href ="#"><li>HOME</li></a>
+                    <a href ="#about"><li>ABOUT</li></a>
+                    <a href ="#skills"><li>SKILLS</li></a>
+                    <a href ="#contact"><li>CONTACT</li></a>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <section class="hero">
+        <div class="herotext">
+            <h1 id="hello">HELLO</h1>
+            <h1 id="name">I'M <span class="name">RUPESH KUMAR</span></h1>
+            <p id="intro">A dedicated Computer Science undergraduate with a strong foundation in design, development.</p>
+            <button><a href="https://drive.google.com/file/d/15DdXG98YINZjyzdcztnBJMCbP345fP06/view?usp=sharing">Download Resume</a></button>
+        </div>
+        <div class="hero-image">
+            <img src="images/myimage1.png" alt="Rupesh Image" id = "myimage"> <!-- Replace with your image path -->
+        </div>
+    </section>
+    
+    <section class = "about" id = "about">
+        <div class = "aboutimg">
+        <img id = "img" src = "images/v2.png" alt = "vector art">
+        <div class = "abouttext" >
+            <h1>About Me</h1>
+            <p>Hi, I’m Rupesh, a second-year Computer Science (Hons) student with a passion for technology and creativity. I love working on diverse projects, from building websites and fitness apps to creating visual designs. I’m skilled in web development (HTML, CSS, JavaScript) and constantly learning to improve my skills.<br><br>
+
+                Whether coding in Python and C++ or creating vector art in Adobe Illustrator, I enjoy blending my technical and creative abilities. When I'm not working, you'll find me sketching, experimenting with fitness routines, or enjoying a cup of chai. I thrive at night, diving into problem-solving and staying updated with the tech world. My goal is to grow, take on challenges, and contribute to impactful projects.</p><br>
+        </div>
+        </div>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/rupesh-kumar-192648296/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            <a href="https://github.com/RupeshKumar-15" target="_blank"><img src="images/github.png" alt="github"></a>
+            <a href="https://x.com/rupeshkumar_15" target="_blank"><img src="images/twitter.png" alt="twitter"></a>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1>Skills</h1>
+        <div class="skills-container">
+            <div class="skill-tile">
+                <img src="images/uiux.png" alt="UI/UX Design">
+                <h3>UI/UX Design</h3>
+                <p>Creating user-centered designs for websites and apps, focusing on usability and aesthetic appeal.</p>
+            </div>
+            <div class="skill-tile">
+                <img src="images/poster.png" alt="Poster Design">
+                <h3>Poster Design</h3>
+                <p>Designing visually impactful posters with strong typography, color schemes, and layout techniques.</p>
+            </div>
+            <div class="skill-tile">
+                <img src="images/webdev.png" alt="Web Development">
+                <h3>Web Development</h3>
+                <p>Building interactive, responsive websites using HTML, CSS, JavaScript, and modern frameworks.</p>
+            </div>
+            <div class="skill-tile">
+                <img src="images/programming.png" alt="Python & C++">
+                <h3>Python & C++</h3>
+                <p>Developing applications and solving complex problems using Python and C++ programming languages.</p>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h1>Contact Me</h1>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        
+        
+    </section>
+
+    
+    
+
+</body>
+</html>

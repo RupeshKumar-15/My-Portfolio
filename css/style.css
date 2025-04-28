@@ -1,0 +1,371 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    background-color: #1c1c1c;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    position: fixed;    
+    top: 0;             
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    color: white;
+    font-size: 17px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
+    display: inline;
+    padding: 10px 40px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; 
+}
+
+nav li:hover {
+    background-color: #d02425;
+    border-radius: 50px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    width: 100%;
+    margin-top: 20vh;
+    padding: 0 10vw;
+}
+
+.herotext {
+    color: white;
+    font-size: 40px;
+    width: 50%;
+}
+
+#hello {
+    font-family: 'impact','Bebas Neue', sans-serif;;
+    font-size: 170px;
+    letter-spacing: 5px;
+    margin-top: -40px;
+}
+
+#intro {
+    font-size: 20px;
+}
+
+.herotext span {
+    color: #d02425;
+}
+
+.herotext button {
+    background-color: transparent;
+    color: white;
+    border: solid 2px #d02425;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.herotext button a {
+    text-decoration: none;
+    color: white;
+}
+
+.herotext button:hover {
+    background-color: #d02425;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Image Styling */
+#myimage {
+    width: 35vw;
+    height: 100vh;
+    padding-bottom: 100px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+    border-radius: 25%;
+}
+
+/* About Section */
+.abouttext {
+    color: white;
+    width: 45vw;
+    margin-left: 42vw;
+    margin-top: 100px;
+}
+
+#img {
+    width: 48vw;
+    height: 70vh;
+    object-fit: contain;
+    float: left;
+    transition: transform 0.5s ease;
+    margin-top: -10vh;
+}
+
+#img:hover {
+    transform: scale(1.1);
+}
+
+.abouttext h1 {
+    font-size: 50px;
+    color: #d02425;
+    padding-bottom: 20px;
+}
+
+/* Social Section */
+.socials {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.socials a img {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    filter: brightness(1) invert(0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.socials a img:hover {
+    transform: scale(1.2) translateY(-3px);
+    box-shadow: 0 0 5px #d02425, 0 0 10px #d02425;
+    background-color: #d02425;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.skills h1 {
+    font-size: 40px;
+    color: #d02425;
+    margin-bottom: 30px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    text-align: center;
+}
+
+/* Individual Skill Tile */
+.skill-tile {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+}
+
+.skill-tile img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+    border-radius: 50%;
+}
+
+.skill-tile h3 {
+    font-size: 20px;
+    color: #d02425;
+    margin-bottom: 10px;
+}
+
+.skill-tile p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Hover Effects */
+.skill-tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.skill-tile:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    background-color: #1c1c1c;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact h1 {
+    font-size: 40px;
+    color: #d02425;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-group label {
+    font-size: 18px;
+    color: #ccc;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: #d02425;
+    background-color: #444;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #d02425;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a01a1a;
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    .herotext {
+        width: 100%;
+        text-align: center;
+    }
+
+    #myimage {
+        width: 70vw;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .abouttext {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .contact .form-group {
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+
+    nav li {
+        padding: 10px;
+        text-align: center;
+    }
+
+    /* Adjustments for #hello on smaller screens */
+    #hello {
+        font-size: 120px;
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #hello {
+        font-size: 100px;
+    }
+
+    .skills h1, .contact h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        height: auto;
+        margin-top: 10vh;
+    }
+
+    #img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Adjustments for buttons and form inputs on smaller screens */
+    .form-group input, .form-group textarea, button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
